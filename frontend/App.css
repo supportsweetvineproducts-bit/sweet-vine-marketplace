@@ -1,0 +1,18 @@
+/* App.css — page-specific helpers */
+
+.brand-logo-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-weight: 600;
+  color: #5C1A2B;
+  letter-spacing: -0.02em;
+}
+
+.shimmer {
+  background: linear-gradient(110deg, #efe9df 8%, #f9f6f0 18%, #efe9df 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+@keyframes shimmer {
+  to { background-position-x: -200%; }
+}

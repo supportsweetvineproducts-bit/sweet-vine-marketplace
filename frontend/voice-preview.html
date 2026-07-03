@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sweet Vine — Signature Voice</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --purple:#5B1A2B; --amber:#C97941; --ink:#2A1318; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(180deg,#f5ead6 0%,#fbf7f1 100%);
+      color: var(--ink);
+      min-height: 100vh;
+      padding: 48px 20px;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; }
+    h1 {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: clamp(34px, 5vw, 52px);
+      color: var(--purple);
+      letter-spacing: -.01em;
+      margin: 0 0 6px;
+    }
+    .sub { color: #6b3a45; margin-bottom: 28px; font-size: 15px; line-height: 1.6; }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 18px 40px -14px rgba(91,26,43,.28);
+      border: 2px solid var(--amber);
+      position: relative;
+    }
+    .card.locked::before {
+      content: "✓ LOCKED IN";
+      position: absolute;
+      top: -12px;
+      left: 24px;
+      background: var(--amber);
+      color: white;
+      font-size: 11px;
+      letter-spacing: .2em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    .card h3 {
+      margin: 0 0 4px;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 28px;
+      color: var(--purple);
+      letter-spacing: -.01em;
+    }
+    .card .vibe {
+      color: var(--amber);
+      font-size: 12px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    audio { width: 100%; margin-top: 6px; }
+    .script {
+      background: rgba(91,26,43,.06);
+      border-left: 3px solid var(--amber);
+      padding: 16px 18px;
+      border-radius: 10px;
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: var(--purple);
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+    .note {
+      margin-top: 22px;
+      padding: 16px 18px;
+      background: rgba(201,121,65,.15);
+      border-radius: 12px;
+      font-size: 13px;
+      color: #6b3a45;
+      line-height: 1.55;
+    }
+    .note b { color: var(--purple); }
+    .pill { display: inline-block; padding: 3px 10px; background: var(--purple); color: #FBF7F1; border-radius: 999px; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+    .fix { font-size: 13px; margin: 6px 0; color: #6b3a45; }
+    .fix b { color: var(--purple); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Sweet Vine — Signature Voice<span class="pill">FINAL</span></h1>
+    <p class="sub">
+      D3 is now your permanent brand voice, saved in your ElevenLabs library
+      as <strong>"Sweet Vine — Signature Voice"</strong>. Use it any time for
+      ads, emails, social videos.
+    </p>
+
+    <div class="script">
+      "From the Northern Rivers of North Carolina… to Alabama's sweet
+      artesian springs… Sweet Vine Products. One hundred percent muscadine
+      juice — nature's number one source of antioxidants. No alcohol.
+      No sugar added. No substitutes. A healthy body… from the vine."
+    </div>
+
+    <div class="card locked">
+      <h3>D3 · Sweet Vine — Signature Voice</h3>
+      <div class="vibe">Aretha · Oprah · Southern Soul</div>
+      <p class="fix"><b>Fixes applied:</b></p>
+      <p class="fix">✓ Removed the "mmm…" filler</p>
+      <p class="fix">✓ Pronunciation: <strong>MUSS-kuh-DYNE</strong> (rhymes with vine) — via IPA phoneme tag</p>
+      <audio controls preload="metadata" src="/audio/hero-voiceover.mp3?v=2"></audio>
+    </div>
+
+    <div class="note">
+      <b>Listen on the actual homepage:</b> visit
+      <a href="/" style="color: var(--purple); text-decoration: underline;">/</a>
+      and click <b>"Watch the story · 24s"</b> in the hero. The slideshow timing
+      has been re-synced to match the new 24-second soulful pacing.
+      <br><br>
+      If you want any other word tweaked (pronunciation, removed, different
+      cadence), just tell me what to fix and I'll re-render in seconds — same
+      voice, same brand identity preserved.
+    </div>
+  </div>
+</body>
+</html>
